@@ -949,3 +949,302 @@
 ]
 
 
+// Blog : Home Page 
+
+[
+    {
+        "img": "https://i.ibb.co/qkcF9Kw/blog1.jpg",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "homePage",
+        "title": "Fresh Salad with Eggs",
+        "date": "Mar 28, 2019",
+        "rating": "4.8",
+        "PrepTime": "25 minutes",
+        "CookTime": "10 minutes",
+        "TotalTime": "35 minutes",
+        "Servings": "2",
+        "shortDesc": "If you do not eat well, then you won’t be able to think well, and sleep well.",
+        "longDesc" : "Now this study suggests another way get more Vitamin E out of salad greens and other raw vegetables. Plus, say the researchers, eggs themselves are rich in beneficial nutrients such as amino acids, unsaturated fatty acids, and B vitamins. One cup (222 grams) of egg salad contains ( 8 ): Calories: 571. Protein: 23 grams. Carbs: 2 grams. Eggs, as a rich source of protein, good fats and essential vitamins can be health-friendly food, only if consumed in a balanced manner. You will be surprised to know that Egg Salad is a smart way to keep a check on your weight and lose those extra inches. The favorite choice for the term Egg Salad is 1 cup of Egg Salad which has about 800 mg of sodium. ",
+        "Ingredients": ["6 large eggs", "2 tablespoons extra-virgin olive oil", "1 15-ounce can no-salt-added chickpeas, drained, rinsed and patted dry", "Kosher salt and freshly ground pepper", "1/3 cup unsalted pepitas (hulled pumpkin seeds)", "1/2 cup plain low-fat Greek yogurt", "2 tablespoons apple cider vinegar", "2 tablespoons chopped fresh chives, plus more for topping", "1 5-ounce package mixed baby greens (about 8 cups)", "2 ounces broccoli sprouts or alfalfa sprouts", "8 small radishes, sliced", "1 avocado, sliced"],
+        "Directions": ["1. Put the eggs in a medium saucepan and cover with cold water by 1 inch. Bring to a boil, then reduce the heat and gently simmer 10 minutes. Drain and rinse under cold water until cool; set aside.", "2. Meanwhile, heat 1 tablespoon olive oil in a small skillet over medium heat. Add the chickpeas and season with salt and pepper. Cook, stirring, until the chickpeas are lightly browned, about 3 minutes. Add the pepitas and cook, stirring, until lightly toasted, about 2 minutes; let cool.", "3. Make the dressing: Whisk the yogurt, 2 tablespoons water, the vinegar, chives and the remaining 1 tablespoon olive oil in a small bowl; season with salt and pepper.", "4. Peel and roughly chop the hard-boiled eggs. Toss the greens, sprouts and radishes in a large bowl; season with salt and pepper. Top each serving of salad with the chickpeas and pepitas, eggs and sliced avocado. Drizzle with the dressing and top with more chives."]
+    },
+    {
+        "img": "https://i.ibb.co/TWKjXXW/blog2.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "homePage",
+        "title": "Mutton Curry With Rice",
+        "date": "Sep 15, 2019",
+        "rating": "5",
+        "PrepTime": "20 minutes",
+        "CookTime": "20 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "4",
+        "shortDesc": "People who love to eat Mutton Curry with Rice are always the best people.",
+        "longDesc" : "Mutton curry (also referred to as kosha mangsho, lamb curry, or goat curry) is a dish that is prepared from goat meat (or sometimes lamb meat) and vegetables. The dish is found in different variations across all states, countries and regions of South Asia. You might hear mutton being described as 'gamey' because the flavour is strong and rich, mellowing when the meat is cooked. The rich flavour of mutton will hold up against an equally bold sauce, so it's the perfect choice for a hearty Autumnal curry or tagine-style stew. Not only is it a rich source of high-quality protein, but it is also an outstanding source of many vitamins and minerals, including iron, zinc, and vitamin B12. Because of this, regular consumption of lamb may promote muscle growth, maintenance, and performance. Mutton, meat from sheep, is not particularly popular because it has a very distinct flavour that many do not like. It is considered a red meat, and probably should not be consumed in excess, like beef. But we know how carefully people limit their beef consumption. Basically, it is food.",
+        "Ingredients": ["500 gm mutton", "2 tablespoon coriander powder", "4 onion", "2 teaspoon garlic paste", "4 clove",
+            "5 green cardamom", "1 cinnamon stick", "salt as required", "2 cup water", "4 tablespoon ghee", "1/2 cup yoghurt (curd)", "2 teaspoon ginger paste", "2 teaspoon red chilli powder", "3 tomato", "8 peppercorns", "1 teaspoon garam masala powder", "1/2 teaspoon turmeric"],
+        "Directions": ["1. Here is an excellent mutton recipe that you can easily make at home. To prepare this easy recipe, firstly, clean and wash the mutton pieces. Next, put a large pan over medium flame and melt ghee in it. Once the ghee has melted, add cardamom, cloves, black peppercorns, cinnamon stick. Saute these for a minute and add the sliced onions along with salt in it. Saute till the onion turns light brown in colour. Next, add the ginger paste along with garlic paste and cook the mixture until the raw smell disappears.", "2. Now, add turmeric powder, red chilli powder and coriander powder to the fried onion and mix it well. Add the mashed tomatoes and mix them well with the other ingredients. Make sure the tomatoes turn pulpy and cook this mix until oil separates from the masala in the pan.", "3. Now, add mutton pieces to this masala and mix it well. Ensure that mutton pieces are evenly coated with the masala. Pour the yoghurt in the mutton masala and mix it well. Let it cook for 4-5 minutes and, then, add water to it. Stir it well and check the seasoning once. Then, add chopped coriander leaves along with garam masala powder. Give it a quick stir. Cook it for another 25 minutes to ensure that mutton is no longer raw and is perfectly juicy.", "4. Once done, take it off the flame and transfer the dish to a bowl. Serve it hot with rice or naan to enjoy! You can also garnish the dish with chopped green chillies and julienned ginger if you want. If you liked the recipe, make sure you rate it and leave a comment in the section below. Happy Cooking!"]
+    },
+    {
+        "img": "https://i.ibb.co/f11BSWj/blog3.jpg",
+        "chefImg": "https://i.ibb.co/g4Ksdy2/blog-Chef3.jpg",
+        "category" : "homePage",
+        "title": "stack red blood",
+        "date": "Jan 02, 2020",
+        "rating": "4.7",
+        "PrepTime": "15 minutes",
+        "CookTime": "15 minutes",
+        "TotalTime": "30 minutes",
+        "Servings": "2",
+        "shortDesc": "Food is really and truly the most effective medicine.",
+        "longDesc" : "You often hear the saying, 'Life is too short, so make the most of it'. Yes, that's right! Well, the reason why they say so is simply because you live your life to the fullest, only during the weekends as other days of the week are usually hectic. To make the most of the weekends, many of us love to indulge in good and greasy food. In fact, it is the perfect time to spoil and pamper yourself with your favourite treats, keeping 'healthy' thoughts aside. And if you are looking to cook this weekend, we have got something that is sure to satisfy all your street food cravings. Yes, you heard us! Here we bring you a list of 5 street-style chicken recipes that would compel you to draw your aprons and start cooking. All these recipes spell indulgence in every bite, making them at home is quite a cakewalk too. So, without any further ado, let's get started with the list.",
+        "Ingredients": ["Oven temp: 375 F- 205 C", "2 cups keema (minced mutton/lamb/beef)", "1 tbsp vinegar", "2 tbsp fenugreek leaves, chopped", "1/2 tbsp garlic paste", "1/2 tbsp ginger paste", "1 1/2 tbsp salt", "1/4 tbsp black pepper, powdered", "1/4 tbsp garam masala", "2 tbsp coriander leaves, chopped", "1 tbsp green chillies, finely chopped", "Skewers to make the kebabs", "Oil for brushing", "chaat masala", "lemon wedges"],
+        "Directions": ["1.In a large bowl, mix lamb mince with few Tbsp of vinegar, fenugreek leaves.",
+            "2.Then add garlic paste, ginger paste, salt and black pepper as per taste.", "3.Add chopped coriander leaves and green chillies.", "4.Refrigerate the meat mixture, covered, to marinate for at least 5 hours.", "5.About 25 minutes before serving, shape the meat mixture into long 'tubes' around the skewers (seekhs) and place on to a grill over a drip tray or into the pre-heated oven (also on a drip tray) and bake for 20-25 minutes.", "6.Brush them with oil and cook for another 2 minutes.", "7.Using oven mittens or a cloth, carefully push the kebab from one end, on to a serving dish.", "8.Garnish with the chaat masala, onions, lemons and serve along with green chutney."
+        ]
+    },
+    {
+        "img": "https://i.ibb.co/yPD4KWz/blog5.jpg",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "homePage",
+        "title": "Dessert salads",
+        "date": "jun 24, 2021",
+        "rating": "5",
+        "PrepTime": "15 minutes",
+        "CookTime": "15 minutes",
+        "TotalTime": "0 minutes",
+        "Servings": "2",
+        "shortDesc": "Eat our fresh Dessert Salad food to make your health healthy.",
+        "longDesc" : "Dessert salads tend to fall into two categories – fluff or fruit – but these incredible recipes prove there’s so much more to this unique treat.Yes, there’s plenty of fruit in this list of over 20 creative dishes, but I’ll bet you’ve never tasted these flavorful fruit fusions. From the tropical flavors of pineapple and mango to the summery taste of fresh berries, these fruity combinations will have you drooling.Fancy something more decadent? How about a strawberry shortcake salad? Or a blueberry cheesecake salad? Light and fruity, or sinfully delicious, these dessert salads are the perfect way to round off a meal. This creamy fruit salad has a bit of everything. Chunks of fresh fruit are nestled amid tiny marshmallows and dressed up with yogurt, cherries, and pecans. It’s crunchy, juicy, sweet, and refreshing all at once. Your tastebuds may not know what’s going on, but your belly will be very happy.You can’t beat the classics. Especially this classic fruit salad, which plays with a variety of delicious tastes and textures It’s a bright bowlful, loaded with colorful kiwis, berries, mandarins, and more. Add a swirl of peach pie filling and you’ll have a crave-worthy dessert the whole family will love.",
+        "Ingredients": ["3 (20 oz) cans crushed pineapple (drained)", "4 (15 oz) cans mandarin oranges (drained)", "1 (8 oz) container of Cool Whip", "1 (8 oz) container of sour cream", "1 (10.5 oz) package miniature marshmallows", "3/4 cup shredded coconut (or to taste)"],
+        "Directions": ["1. Mix pineapple, mandarin oranges, Cool Whip, sour cream, marshmallows, and shredded coconut together in a bowl.", "2. Cover bowl with plastic wrap and refrigerate until flavors blend. Refrigerate for at least 2 hours. Tastes even better when chilled overnight."]
+    },
+    {
+        "img": "https://i.ibb.co/hZBj5YH/blog4.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "homePage",
+        "title": "Delicious Chicken",
+        "date": "Nov 26, 2020",
+        "rating": "4.9",
+        "PrepTime": "20 minutes",
+        "CookTime": "20 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "4",
+        "shortDesc": "Test our delicious foods in suitable environment with family, friends & love.",
+        "longDesc" : "Let's just agree already that chicken meals are the way to a non-vegetarian's heart. And when it is about fried chicken, can we ever say no? What is better than some freshly made, crispy, fried chicken to relish on? The crunchy crust of fried chicken that cracks on the first bite and burst into flavours of spices, lime and sauces that the juicy meat has been tossed into, is just heavenly! From outdoor picnics to game or movie nights with friends or a weekend special get-together with family, you can always find a reason to prepare a fried chicken meal at home.Besides everything, many fried chicken recipes are super easy to prepare and require a few ingredients. With bone or without, dipping your hot and crispy fried chicken in a tantalising, smoky sauce is one of the simplest pleasures to rejoice. While we all have wolfed down delectable fried chicken wings or stir fried chicken in many restaurants, have you tried preparing the same dishes at home? Let's make it easier for you as we get you the best of fried recipes from kitchens around the world that you can try at home. The key to perfect fried chicken lies in the art of coating it in the right spices and then frying.",
+        "Ingredients": ["½ cup finely chopped fresh parsley", "2 ½ tablespoons olive oil", "2 tablespoons chopped fresh oregano leaves", "1 tablespoon red wine vinegar", "2 cloves garlic, minced", "¼ teaspoon salt", "⅛ teaspoon red pepper flakes", "1 pinch freshly ground black pepper", "1 (3 pound) whole chicken", "1 teaspoon olive oil", "1 large onion, sliced", "½ cup chicken broth"],
+        "Directions": ["1. Combine parsley, 2 1/2 tablespoons olive oil, oregano, vinegar, garlic, salt, red pepper flakes, and black pepper in a bowl; mix the chimichurri thoroughly.", "2. Place chicken on a cutting board and remove the backbone using kitchen shears. Press down on the breast with the heel of your hand to flatten. Loosen the skin of the chicken carefully and rub the chimichurri underneath, distributing it evenly. Wrap the chicken in plastic wrap and refrigerate for 24 hours.", "Allow chicken to come to room temperature for no more than 1 hour before baking.", "4. Preheat oven to 450 degrees F (230 degrees C). Rub 1 teaspoon olive oil over the chicken; season with salt and pepper. Place onion in a cast-iron skillet. Pour chicken broth over onion. Place seasoned chicken on top.", "5. Bake in the preheated oven until no longer pink at the bone and the juices run clear, about 45 minutes. An instant-read thermometer inserted into the thickest part of the meat, near the bone, should read 165 degrees F (74 degrees C). Allow chicken to rest in a warm area for 10 minutes before slicing."]
+    }
+]
+
+//  Blog : Blog Page
+
+[
+    {
+        "img": "https://i.ibb.co/SR3vvhT/blog-Post3.jpg",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "blogPage",
+        "title": "Mexican Burger",
+        "date": "2 January, 2022",
+        "rating": "4.8",
+        "PrepTime": "20 minutes",
+        "CookTime": "20 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "4",
+        "shortDesc": "Burgers are one of most favourite comfort foods we have. They are easy to cook and so delicious to eat! Burgers are the most amazing on-the-go recipes, just a few ingredients in place and you are good to go!...",
+        "longDesc" : "Burgers are one of most favourite comfort foods we have. They are easy to cook and so delicious to eat! Burgers are the most amazing on-the-go recipes, just a few ingredients in place and you are good to go! The burger patty is one of the most versatile ingredients that can be added to any burger. From vegetable patty to chicken patty to beef patty or paneer patty, you can experiment according to your mood. This recipe is of a delicious Mexican burger that has all the Mexican flavours combined into a few bites. A delicious avocado spread, very similar to guacamole, is prepared in this recipe and is applied generously on burgers! What are you waiting for now? Grab all the ingredients and cook yourself a delicious burger with this step by step recipe below!",
+        "Ingredients": ["6 guajillo peppers", "3 cloves garlic", "2 avocados, chopped", "1 lime, juiced", "1 jalapeno pepper, diced", "2 Tbsp chopped fresh cilantro", "1 ½ tsp salt, divided", "2 Tbsp chopped onion", "1 cup water", "1 Tbsp brown sugar", "1 Tbsp tomato paste", "1 Tbsp cider vinegar", "1 ancho chili, toasted and ground (or chili powder)", "1 lb ground beef", "1 tsp pepper", "8 slices queso fresco", "4 burger buns", "Tortilla chips", "4 slices tomato", "4 slices onion"],
+        "Directions": ["1. Heat a skillet on medium-high. Add guajillo peppers and toast for 5 minutes. Remove peppers and set aside. Place garlic in the pan, with skin still intact and toast on both sides until lightly charred, about 3 minutes. Remove and set aside.",
+            "2. Cut the stems off the guajillo peppers and discard seeds. Use scissors to cut the peppers into small pieces in a medium bowl. Pour boiling water over top until the peppers are covered and set aside to rehydrate for 15 minutes.",
+            "3. Meanwhile, make the jalapeno guacamole by mashing together the avocado, lime juice, diced jalapeno, cilantro and ¼ tsp salt. Set aside until serving.",
+            "4. Once the guajillo peppers are rehydrated, remove the skins from the garlic and place in the container of a blender. Add chopped onion, water, brown sugar, tomato paste, cider vinegar and ¼ tsp salt. Strain the guajillo peppers and add them to the blender. Pulse on high until smooth, then pass the guajillo ketchup through a sieve. Discard the seeds and skin, and reserve the ketchup for serving.",
+            "5. Preheat BBQ on high heat. Form the ground beef into 4 patties and season with ancho chili, remaining salt and pepper. Place on the grill and cook for 5 minutes per side or until medium-well. Add queso fresco once the burgers are flipped. Toast the buns for the final minute of cooking. Remove the buns and burgers and allow to rest for 3 minutes.",
+            "6. To assemble, spread a spoonful of jalapeno guacamole on the bottom bun. Top with a handful of tortilla chips and place burger on top. Spoon guajillo ketchup on the burger, then top with one slice of tomato and onion. Smother in additional guajillo ketchup and finish with the top bun."
+        ]
+    },
+    {
+        "img": "https://i.ibb.co/jT7kvgj/blog-Post2.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "blogPage",
+        "title": "Kabab",
+        "date": "25 December, 2021",
+        "rating": "5",
+        "PrepTime": "30 minutes",
+        "CookTime": "15 minutes",
+        "TotalTime": "45 minutes",
+        "Servings": "2",
+        "shortDesc": "Gorgeous kababs that make an amazing meal with bold flavours and is packed full of freshness! These quick & easy minty kababs served alongside raita are perfect for a relaxed meal your family and friends will all want to tuck into...",
+        "longDesc" : "While many people may not enjoy having a mutton curry, there is one way that all non-vegetarians eat mutton happily, it is in the form of kebabs! People just can't get their hands off of a delicious and juicy kebab. Kebabs are a delicious snack that is extremely popular in North India. We Indians received these delectable snacks thanks to the Mughlai cuisine. Nowadays, kebabs can be made of any ingredient - paneer, dal, chicken and more. But traditionally, the Mughlai kebabs were made from mutton. So, if you want to enjoy the authentic Mughlai taste, then we have a list of delicious mutton kebab recipes that you must try!",
+        "Ingredients": ["Oven temp: 375 F- 205 C", "2 cups keema (minced mutton/lamb/beef)", "1 tbsp vinegar", "2 tbsp fenugreek leaves, chopped", "1/2 tbsp garlic paste", "1/2 tbsp ginger paste", "1 1/2 tbsp salt", "1/4 tbsp black pepper, powdered", "1/4 tbsp garam masala", "2 tbsp coriander leaves, chopped", "1 tbsp green chillies, finely chopped", "Skewers to make the kebabs", "Oil for brushing", "chaat masala", "lemon wedges"],
+        "Directions": ["1.In a large bowl, mix lamb mince with few Tbsp of vinegar, fenugreek leaves.",
+            "2.Then add garlic paste, ginger paste, salt and black pepper as per taste.", "3.Add chopped coriander leaves and green chillies.", "4.Refrigerate the meat mixture, covered, to marinate for at least 5 hours.", "5.About 25 minutes before serving, shape the meat mixture into long 'tubes' around the skewers (seekhs) and place on to a grill over a drip tray or into the pre-heated oven (also on a drip tray) and bake for 20-25 minutes.", "6.Brush them with oil and cook for another 2 minutes.", "7.Using oven mittens or a cloth, carefully push the kebab from one end, on to a serving dish.", "8.Garnish with the chaat masala, onions, lemons and serve along with green chutney."
+        ]
+    },
+    {
+        "img": "https://i.ibb.co/89jZtLk/blog-Post1.jpg",
+        "chefImg": "https://i.ibb.co/g4Ksdy2/blog-Chef3.jpg",
+        "category" : "blogPage",
+        "title": "Chips & Fried Chicken",
+        "date": "27 November, 2021",
+        "rating": "4.8",
+        "PrepTime": "15 minutes",
+        "CookTime": "30 minutes",
+        "TotalTime": "45 minutes",
+        "Servings": "1",
+        "shortDesc": "Crunchy potato chips are a natural coating to create a crispy crust for baked chicken breasts everyone in the family will love for dinner...",
+        "longDesc": "We can all agree on one thing…that fried chicken is delicious. But, we can also agree that sometimes delivery is the best way to receive your dinner. Chicken N’ Chips has the freshest, and best quality fried eats around. From our staple Chicken Stix to potato salad, we have all of your favorite American classics cooked to order for delivery! That said, even with the majority of Americans enjoying fried chicken, a surprising amount knows very little behind the meal. Because we love chicken and our customers, here is a fun-filled article just for you! Besides, it’s always good to have a little trivia night knowledge tucked away. Enjoy!",
+        "Ingredients": ["4 boneless, skinless chicken breasts, sliced", "1 cup flour(125 g)", "1 tablespoon salt", "1 tablespoon pepper", "1 tablespoon garlic powder", "1 tablespoon onion powder", "4 eggs, beaten", "2 cups potato chip(70 g), of preference, crushed"],
+        "Directions": ["1. In a large ziploc bag, add the flour, salt, pepper, garlic powder, onion powder, and stir to combine.", "2. In a wide dish, beat the eggs", "3. In a separate ziploc bag, crush your favorite type of potato chip.", "4. Preheat oven to 425°F (220°C).", "5. To bread the chicken, first place the chicken slices in the bag of seasoned flour and shake until completely coated, then pour the chicken into the egg mixture and stir with a slotted spoon until completely coated.", "6. Place the egg-coated chicken and place into the bag of crushed chips and shake until they are completely coated.", "7. Pour the potato chip-coated chicken onto a parchment paper-lined sheet tray.", "8. Bake for 25 minutes, or until the chicken reaches an internal temperature of 165°F (74°C) and is golden brown.", "9. Serve with your favorite dipping sauce.", "10. Enjoy!"]
+    },
+    {
+        "img": "https://i.ibb.co/bWc3pC4/blog-Post4.webp",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "blogPage",
+        "title": "Vegetable Ramen",
+        "date": "05 July, 2021",
+        "rating": "4.7",
+        "PrepTime": "25 minutes",
+        "CookTime": "10 minutes",
+        "TotalTime": "35 minutes",
+        "Servings": "2",
+        "shortDesc": "Easy homemade chicken ramen, with a flavorful broth, roasted chicken, fresh veggies, lots of noodles, and a soft cooked egg. Inspired by traditional Japanese ramen, but on the table in under an hour...",
+        "longDesc": "With most ramen, the work that’s put into the broth is what makes all the difference, providing the foundation for the entire dish. A broth made with pork, chicken or seafood can be cooked for up to three days, resulting in an intense, velvety soup that sings with complex, multilayered flavors.So it may feel unfair to stack a quick-cooked vegan broth up against a meaty one that has been toiled over for dozens of hours. But the creamy, meatless broth behind tantanmen stands up formidably to the challenge, coming together in little time without sacrificing flavor or body.Tantanmen, which finds its origins in the Sichuan dish dan dan noodles, derives its power not from a labored broth, but from a mildly sweet soy milk base combined with flavorful seasonings, which the Japanese call tare.Here, buttery Chinese or Japanese sesame paste, which has a richer and more robust finish than tahini, is paired with soy sauce, rice vinegar, chile oil and sugar to impart earthiness to the broth. Doubanjiang, the spicy sauce from Sichuan composed of fermented fava beans and a local variety of chile known as er jing tiao, is often included for depth and extra heat, so feel free to add a couple of tablespoons, to taste, if you have some on hand.",
+        "Ingredients": ["1 tablespoon sesame oil", "3 teaspoons ginger, grated", "4 teaspoons garlic, minced", "3 tablespoons soy sauce", "2 tablespoons mirin or rice wine vinegar", "4 cups vegetable stock (or chicken stock)", "½ cup fresh shiitake mushrooms", "2 eggs", "1 cup baby spinach", "2 (3 oz) packs dried ramen noodles", "hot sauce, to taste (optional)", "½ cup green onions/scallions, sliced", "1 cup carrots, shredded", "sesame seeds (optional, for topping)"],
+        "Directions": ["1. Heat the sesame oil in a large pot over medium heat. Add the garlic and ginger and cook for a couple minutes until soft and fragrant. Stir in the soy sauce and mirin and cook for another minute. Add the stock and bring to a simmer. Simmer for 5 minutes.", "2. Add the mushrooms and simmer for another 10 minutes.", "3. Meanwhile, bring a small pot of water to a boil. Add the eggs and cook for exactly 7 minutes for a slightly runny yoke or 8 minutes for a soft yolk. Remove eggs from the pot and place in a bowl of ice water to stop the cooking process. After a few minutes, peel the shells off carefully and slice the eggs in half, lengthwise. Set aside.", "4. Bring another pot of water to a boil. Add the spinach and cook for about a minute, until just wilted. Remove from pot and run under cold water to stop the cooking process. Drain and set aside.", "5. Add ramen noodles to stock mixture and cook 2-3 minutes or according to package instructions. Add some hot sauce, to taste (optional).", "6. Divide the soup into 2 large bowls.", "7. Top with an egg, spinach, carrots and green onions. Sprinkle with sesame seeds (optional) and serve immediately."]
+    },
+    {
+        "img": "https://i.ibb.co/fSs4vVr/blog-Post5.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "blogPage",
+        "title": "Mutton Briyani",
+        "date": "25 February, 2021",
+        "rating": "5",
+        "PrepTime": "10 minutes",
+        "CookTime": "50 minutes",
+        "TotalTime": "60 minutes",
+        "Servings": "2",
+        "shortDesc": "Briyani is a rice-based dish made with spices and chicken, mutton, fish, eggs or vegetables. The name is derived from the Persian word bre, meaning fried, roasted .It was one of the most famous dishes in the kitchen of the Mughal Emperors...",
+        "longDesc" : "Biryani! The name itself is enough to get us into a feast mode, isn't it? Be it a dinner party or just our cravings acting up, biryani seems to magically take care of everything. But what is it about the one-pot meal that no one can resist? Perhaps the aromatic play of exotic spices such as star anise, bay leaf, clove and a hint of saffron with flavourful masalas tossed with succulent meat chunks layered neatly with rice. Or the sheer variety that one can find a different type of biryani in each corner of the country.And how can we not mention the origins of biryani in south India when talking about the variety. The mouth-watering Hyderabadi biryani is the ultimate heaven for biryani lovers. And if you love the south Indian flavours in your biryani, you shouldn't miss Tamil Nadu's Ambur mutton biryani! A small town in Tirupattur district in Tamil Nadu, Ambur besides a sizeable leather industry, is known for its non-vegetarian biryanis.",
+        "Ingredients": ["1 Star anise", "500 gms basmati rice, blanched", "2 Bay leaves", "2 Black cardamom", "2 tsp black cumin seeds", "6 Black peppercorn", "6 Green cardamom", "2 Cinnamon sticks", "6 Cloves", "1 tsp fennel", "1/4 Jaiphal", "1 Javitri", "3 tsp Salt", "1 kg mutton (cut in 2 inches pieces, preferably front leg part and avoid shoulder cut)", "1 tbsp garam masala", "1 tbsp garlic paste", "1 tbsp ginger paste", "3 tbsp raw papaya paste", "4 tbsp hung curd", "1 Lemon (juiced)", "Coriander powder", "Cumin powder", "1 tbsp red chilli powder", "1 tsp salt", "4 onions, sliced", "2 tomatoes, chopped", "1/4 cup milk (warm)", "Ghee", "Saffron strands", "Rose water"],
+        "Directions": ["1. To the mutton add the beaten curd, ginger-garlic paste, raw papaya paste, chilli powder, salt, lemon juice, garam masala. Allow the mutton to marinate for 3 hours. Slice 2 onions very thinly. Separate the slices. In a pan or kadai add oil and fry the onion slices till nicely brown. Take care not to burn them. Fry in small batches. Do not put all the slices at a time, that will lead to lumpy messy onions.", "2. Make sure all the onion slices frying are dipped in oil, if needed add more oil. Keep stirring continuously but gently for an even brown color. Take the fried onions out with a slotted spoon or ladle. Keep them on a paper-towel lined plate. This crispy brown fried onion slices are called Barista. Heat ghee in a thick-bottomed pan. Add remaining sliced onions and green chillies. Cook, stirring continuously, till onions are light golden brown. Add ginger paste and garlic paste and mix well. Add marinated mutton and cook on high heat for seven to eight minutes. Add coriander powder, cumin powder and red chilli powder. Mix thoroughly.", "3. Stir in three cups of water, bring it to a boil, reduce heat and cook covered till mutton is almost cooked. Add tomatoes, salt, garam masala powder and fresh coriander leaves. Cook for 15 minutes on medium heat, stirring occasionally. The ghee would be separated from the spices and there should not be any watery gravy to the meat. Use only good quality long grain Basmati rice. Soak the rice for 20 minutes in water. Wash well till the water runs clear. Drain all the water. In a small piece of cloth take cardamom, cinnamon, cloves, javitri, jaiphal, black peppercorn, shahi jeera, star anise and tie a knot to make a bag (potli). Bring 750 ml water to boil, add rice, bay leaf, salt and potli, cover and cook till rice is done 1/3rd. Drain the water & remove the whole masala potli. Take 1/4th cup warm milk in a cup and dissolve saffron strands in the milk.", "4. Cover and wait for 20 minutes. Add rose water and kewra essence in the milk. Mix well and cover. Keep aside. Take a large heavy bottom pan with tight fitting lid. Add 2tbsp ghee to the pan. Melt the ghee on low heat. Turn and rotate the pan carefully so the ghee can coat the bottom and sides of the pan. Switch off the heat. Add a layer of cooked rice, then cooked meat pieces, sprinkle saffron water, add fried onion slices and ghee.", "5. Cover with chopped pudina and coriander  onion and slit green chillies and juice of half a lemon."]
+    },
+    {
+        "img": "https://i.ibb.co/DMDJm9H/blog-Post6.jpg",
+        "chefImg": "https://i.ibb.co/g4Ksdy2/blog-Chef3.jpg",
+        "category" : "blogPage",
+        "title": "Fish Fried",
+        "date": "18 November, 2020",
+        "rating": "4.9",
+        "PrepTime": "10 minutes",
+        "CookTime": "30 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "2",
+        "shortDesc": "A fish fry is a meal containing battered or breaded fried fish. It usually also includes french fries, coleslaw, mudpuppies, lemon slices, tartar sauce, hot sauce, malt vinegar and dessert...",
+        "longDesc" : "Deep-fried fish, pan-fried fish, and other homemade crispy seafood recipes can seem intimidating. “Will they make my house smell?” Nope! Not if you follow our instructions about the best fish to fry and cook with. “Will I end up with a soggy batter?” No, we’re here to walk you through every step of the process of how to fry fish, so you end up with the crispiest results. So trust yourself, you’ve reel-y got this, and prepare to prep your best batch ever of deep-fried fish, pan-fried fish, or air-fried fish for dinner this week.",
+        "Ingredients": ["Vegetable oil, for frying", "1 1/2 to 2 pounds fresh cod", "Salt and pepper", "1 /2 cup all-purpose unbleached flour", "2 large eggs", "2 tablespoons cold water, a splash", "2 cups plain bread crumbs", "1/2 teaspoon dried mustard powder", "1/4 teaspoon cayenne pepper, a few pinches", "Wedged lemons and malt vinegar for topping"],
+        "Directions": ["1. Pour 2-inches of vegetable oil into a large skillet. Place skillet over large burner and heat oil over medium high heat. To check if the oil is hot enough, drop in 1-inch cube of white bread. The bread should brown in a 40 count.", "2. Cut cod into 4 servings, 6 to 8-ounce portions and season with salt and pepper. Place a couple of scoops of flour in a pie tin. Combine egg and water in second tin. Season plain bread crumbs and mustard and cayenne in the third tin. Coat fish in flour, then egg, and then bread crumbs. Gently set coated fish into hot oil and fry 5 minutes on each side until medium golden brown in color.", "3. When the fish is evenly golden all over, remove and drain on brown paper sacks."]
+    },
+    {
+        "img": "https://i.ibb.co/k1KfzR9/blog-Post7.jpg",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "blogPage",
+        "title": "Chicken Quase",
+        "date": "2 October, 2020",
+        "rating": "5",
+        "PrepTime": "25 minutes",
+        "CookTime": "15 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "6",
+        "shortDesc": "Javanese deep-fried dish of chicken, tofu, or tempeh. The cooking method started as a means to preserve food. Chicken, tofu, and tempeh are first simmered in spice broth until fully cooked, tender, and the spices absorbed...",
+        "longDesc" : "With trying to fit in plenty of pool dates, trips to the beach, and loads of outdoor fun our summer is filled to the top with low-key activities. In the evenings I’m left with as little time to prepare dinner as I have during the school year so I’m always in search of an easy meal. Skillet recipes, such as this perfectly cheesy Queso Chicken Skillet, fall under this category and everyone in my family, myself included, is happy about it.With so much delicious cheese, one of which is homemade queso, filling your skillet you can easily sneak some healthy vegetables into your dish that will go unnoticed. In this Queso Chicken Skillet are diced tomatoes and green chilis, but don’t stop there! You could easily add in some poblano peppers, bell peppers, or even some riced cauliflower and no one will notice.",
+        "Ingredients": ["1 Star anise", "500 gms basmati rice, blanched", "2 Bay leaves", "2 Black cardamom", "2 tsp black cumin seeds", "6 Black peppercorn", "6 Green cardamom", "2 Cinnamon sticks", "6 Cloves", "1 tsp fennel", "1/4 Jaiphal", "1 Javitri", "3 tsp Salt", "1 kg mutton (cut in 2 inches pieces, preferably front leg part and avoid shoulder cut)", "1 tbsp garam masala"],
+        "Directions": ["1.In a large bowl, mix lamb mince with few Tbsp of vinegar, fenugreek leaves.",
+            "2.Then add garlic paste, ginger paste, salt and black pepper as per taste.", "3.Add chopped coriander leaves and green chillies.", "4.Refrigerate the meat mixture, covered, to marinate for at least 5 hours.", "5.About 25 minutes before serving, shape the meat mixture into long 'tubes' around the skewers (seekhs) and place on to a grill over a drip tray or into the pre-heated oven (also on a drip tray) and bake for 20-25 minutes.", "6.Brush them with oil and cook for another 2 minutes.", "7.Using oven mittens or a cloth, carefully push the kebab from one end, on to a serving dish.", "8.Garnish with the chaat masala, onions, lemons and serve along with green chutney."
+        ]
+    },
+    {
+        "img": "https://i.ibb.co/6HYv0vm/blog-Post8.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "blogPage",
+        "title": "Chicken nuggets",
+        "date": "25 June, 2020",
+        "rating": "4.6",
+        "PrepTime": "20 minutes",
+        "CookTime": "20 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "4",
+        "shortDesc": "Chicken nuggets are so wonderfully versatile, and they’re just as suitable for a quick after-school dinner for the kids as they are as a more grown up meal for adults. After all, who doesn’t love a morsel of tender, moist chicken, encased in a tasty batter or breadcrumb...",
+        "longDesc" : "Chicken nuggets may look appealing on the outside, with their golden fried batter, but what’s inside is far more disturbing. Chicken nuggets are made with white chicken meat that comes from the breast or pectoral muscles of the birds, and other chicken parts can be mixed in as well. Tendons, bones, nervous and connective tissues, and fat can all be ground up together before being shaped into those bite-sized pieces. One study found that chicken nuggets contained more fat than meat, along with bone, nerve, and connective tissue. Of course, manufacturers and brands have varying recipes, and these are often well-guarded secrets. Some may contain more meat with fewer additives or other materials, but when you find out how chicken nuggets are made, you'll want to leave them off your plate regardless.",
+        "Ingredients": ["1/2 cup all-purpose flour", "1 teaspoon granulated garlic", "Kosher salt and ground black pepper", "2 boneless skinless chicken breasts, cut into 1 1/2-inch pieces", "1 cup prepared breadcrumbs", "1 large egg", "1 cup vegetable oil"],
+        "Directions": ["1. Place the flour in a resealable plastic bag and season with the garlic, 1 teaspoon salt and 1/4 teaspoon pepper. Place the chicken pieces in the bag with the flour and toss to coat (work in batches). Transfer the breadcrumbs to a rimmed plate, season with salt and pepper and set aside. ", "2. Whisk the egg and 1 tablespoon water in a medium bowl. Remove a piece of chicken from the flour, dip in the egg mixture, then the breadcrumbs, gently pressing the crumbs into the chicken, and set on a clean plate. Repeat with the remaining pieces of chicken. ", "3. Heat the vegetable oil in a large frying pan over medium-high heat. Add the chicken pieces to the pan (work in batches if needed) and brown on each side, about 8 minutes total. Use a spatula to transfer the chicken nuggets to a paper-towel-lined plate. Salt while hot and serve."]
+    },
+    {
+        "img": "https://i.ibb.co/cNpw8xC/blog-Post9.jpg",
+        "chefImg": "https://i.ibb.co/g4Ksdy2/blog-Chef3.jpg",
+        "category" : "blogPage",
+        "title": "Nut dinner recipes",
+        "date": "27 March, 2020",
+        "rating": "4.7",
+        "PrepTime": "30 minutes",
+        "CookTime": "10 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "3",
+        "shortDesc": "Add nuts to your side dishes. Think of combinations like brown rice and chopped pecans, green beans and almonds, pistachios with peas and carrots. Nuts are so versatile; you can have a lot of fun being creative with them!...",
+        "longDesc" : "Eating nuts every day as part of a balanced diet can be great for your health. Just make sure you don't go overboard, since nuts are high in calories. Nuts contain healthy fats, minerals, and nutrients that not only make them a great snack but also mean they are a heart-healthy food. Nuts are a nutritionally rich food, containing most of the vitamins and minerals the body needs. They're one of the main sources of ALA omega-3 fatty acids, offering a range of health benefits from reducing rheumatoid arthritis to protecting against Alzheimer's and dementia.",
+        "Ingredients": ["1/2 cup butter, melted", "1/2 cup confectioners' sugar", "1-1/2 teaspoons ground cinnamon", "1/4 teaspoon ground ginger", "1/4 teaspoon ground allspice", "1-1/2 cups pecan halves", "1-1/2 cups walnut halves", "1 cup unblanched almonds"],
+        "Directions": ["1. In a greased 3-qt. slow cooker, mix butter, confectioners' sugar and spices. Add nuts; toss to coat. Cook, covered, on low 2-3 hours or until nuts are crisp, stirring once.", "2. Transfer nuts to waxed paper to cool completely. Store in an airtight container."]
+    },
+    {
+        "img": "https://i.ibb.co/xgjmbry/blog-Post10.jpg",
+        "chefImg": "https://i.ibb.co/ydzrpGQ/blog-Chef1.jpg",
+        "category" : "blogPage",
+        "title": "Roti & Roll",
+        "date": "05 January, 2020",
+        "rating": "4.8",
+        "PrepTime": "20 minutes",
+        "CookTime": "20 minutes",
+        "TotalTime": "40 minutes",
+        "Servings": "4",
+        "shortDesc": "Paratha is made plain simple or stuffed with vegetable stuffings. The vegetables are mashed or finely chopped or grated. The stuffing can be mixed with the dough or layered as a single filling inside the dough...",
+        "longDesc" : "Roti is something most kids hate. They put in all their efforts to trick their moms for not eating Rotis. But mothers cannot ignore the fact that their kids are not having proper nutrition. That is why they try to make efforts to make the roti with different ways to make it more appealing to their children. So here we bring to you a list of ways to make the normal roti rolls as tasty as they desire. These roti rolls are very easy to make at home, and you can prepare this roti roll according to your preferences as well. You can pack these rolls in a lunch box or serve it for dinner. This roll is the perfect way to make your kid eat healthy food. ",
+        "Ingredients": ["flour - 2 cup", "sugar - 1 tsp", "baking powder - 1/2 tsp", "oil - 2 tbsp", "salt - 1/2 tsp", "water to mix", "eggs - 6, lightly beaten", "oil - 2 tbsp", "onion - 1 cup, finely chopped", "chilli powder - 1 tsp", "turmeric powder - 1/2 tsp", "cumin powder - 1/2 tsp coriander powder - 1 tsp", "Garam Masala powder - 1 tsp", "tomato puree - 2 tbsp", "paneer - 150 gm, grated", "coriander leaves - 3 tbsp, chopped", "salt to taste"],
+        "Directions": ["1. Combine flour, salt, sugar, baking powder and oil. Add enough water and knead into soft but not sticky dough. Keep covered for one and a halfhour. Heat oil for filling, fry onion till light brown. fry for few seconds. Add tomato puree, paneer, eggs and salt.", "2. Cook and stir on a low flame till the eggs are scrambled. Remove from fire and stir in the coriander leaves. Divide the dough into 8 parts. Roll out into thin rounds.", "3. Heat a girdle and cook the Roti slightly on both sides. Place 1/8 th of filling on each Roti and roll up. Seal the edges with some beaten egg. Brush the Rotis with egg and roll in peanut powder. Place them on a greased baking sheet, seam side down. Brush on top with oil and bake in a hot oven (200 C) till golden brown. Serve hot."]
+    },
+    {
+        "img": "https://i.ibb.co/KyBKsB1/blog-Post11.jpg",
+        "chefImg": "https://i.ibb.co/X3fYj3P/blog-Chef2.jpg",
+        "category" : "blogPage",
+        "title": "Mini Burger",
+        "date": "25 October, 2019",
+        "rating": "4.5",
+        "PrepTime": "15 minutes",
+        "CookTime": "15 minutes",
+        "TotalTime": "30 minutes",
+        "Servings": "1",
+        "shortDesc": "A simple combination of mayo and yellow mustard is what we use to grill and assemble the burgers. Cheese – we love thick-sliced medium cheddar cheese for burgers...",
+        "longDesc" : "There's something inherently appealing about a small burger. Perhaps, culturally speaking, it stems from the same place as our interest in puppies, kittens, and the Fiat 500: it's the equivalent of something we really like, only smaller. But in a time when burgers can occasionally be dauntingly huge, with arrays of toppings that can sometimes veer into the baroque and even ridiculous, the mini-burger is reassuringly simple: a patty, a bun, and (usually) some variety of topping–including cheese, sauce, and onions, depending on the restaurant. For all of its simplicity, the mini-burger is also a magnificently versatile item. You'll find them listed as entrees on some menus, and as appetizers on others. There's also the question of where, exactly, the distinction between mini-burgers and sliders can be found, which can be more divisive than one might expect. For the record, several of the people interviewed for this article argued that the two are one and the same. For us mini-burgers and sliders are the same thing, although the size varies greatly from place to place, said Anthony Malone of the New York City bar and restaurant Swift's Hibernian Lounge, which has been serving mini-burgers for the last ten years.",
+        "Ingredients": ["6 guajillo peppers", "3 cloves garlic", "2 avocados, chopped", "1 lime, juiced", "1 jalapeno pepper, diced", "2 Tbsp chopped fresh cilantro", "1 ½ tsp salt, divided", "2 Tbsp chopped onion", "1 cup water", "1 Tbsp brown sugar", "1 Tbsp tomato paste", "1 Tbsp cider vinegar", "1 ancho chili, toasted and ground (or chili powder)", "1 lb ground beef", "1 tsp pepper", "8 slices queso fresco", "4 burger buns", "Tortilla chips", "4 slices tomato", "4 slices onion"],
+        "Directions": ["1. Heat a skillet on medium-high. Add guajillo peppers and toast for 5 minutes. Remove peppers and set aside. Place garlic in the pan, with skin still intact and toast on both sides until lightly charred, about 3 minutes. Remove and set aside.",
+            "2. Cut the stems off the guajillo peppers and discard seeds. Use scissors to cut the peppers into small pieces in a medium bowl. Pour boiling water over top until the peppers are covered and set aside to rehydrate for 15 minutes.",
+            "3. Meanwhile, make the jalapeno guacamole by mashing together the avocado, lime juice, diced jalapeno, cilantro and ¼ tsp salt. Set aside until serving.",
+            "4. Once the guajillo peppers are rehydrated, remove the skins from the garlic and place in the container of a blender. Add chopped onion, water, brown sugar, tomato paste, cider vinegar and ¼ tsp salt. Strain the guajillo peppers and add them to the blender. Pulse on high until smooth, then pass the guajillo ketchup through a sieve. Discard the seeds and skin, and reserve the ketchup for serving.",
+            "5. Preheat BBQ on high heat. Form the ground beef into 4 patties and season with ancho chili, remaining salt and pepper. Place on the grill and cook for 5 minutes per side or until medium-well. Add queso fresco once the burgers are flipped. Toast the buns for the final minute of cooking. Remove the buns and burgers and allow to rest for 3 minutes.",
+            "6. To assemble, spread a spoonful of jalapeno guacamole on the bottom bun. Top with a handful of tortilla chips and place burger on top. Spoon guajillo ketchup on the burger, then top with one slice of tomato and onion. Smother in additional guajillo ketchup and finish with the top bun."
+        ]
+    }
+]
+
+
+
+// REVIEWE Message about Restaurant
+
+[
+    {
+        "img": "https://i.ibb.co/yW2pPRT/comment-Person.webp",
+        "name": "Micheal Smith",
+        "profession" : "Marketer",
+        "email" : "micheal@gmail.com",
+        "date" : "21 December 2021",
+        "message": "Dingo is a awesome restaurant. I found their much good environment. Their food quality is best and much delicious. Fully family environment restaurant. You and also book for party center. Vary friendly."
+    }
+]
