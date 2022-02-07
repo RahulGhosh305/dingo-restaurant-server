@@ -50,18 +50,6 @@ client.connect(err => {
             res.send(documents);
         })
     })
-    // MENU : ADD FOOD ITEM
-    app.post('/addMenu', (req, res) => {
-        const data = req.body;
-        console.log(data);
-        allMenuCollections.insertOne(data)
-        .then(result => {
-            res.send("Success To add Menu")
-        })
-        .catch(err => {
-            console.log(err);
-        })
-    })
 
     // DASHBOARD MENU : ALL MENUS
     app.get('/allFoods', (req, res) => {
@@ -80,51 +68,62 @@ client.connect(err => {
         })
 
     })
-
+    // MENU : ADD FOOD ITEM
+    app.post('/addMenu', (req, res) => {
+        const data = req.body;
+        console.log(data);
+        allMenuCollections.insertOne(data)
+        .then(result => {
+            res.json("Success To add New Menu")
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    })
     // MENUS : ALL HOME FOOD
-    app.get('/homeMenus', (req, res) => {
+    app.get('/HomeMenu', (req, res) => {
         allMenuCollections.find({"type" : "HomeMenu"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
     // MENUS : ALL BREAKFAST FOOD 
-    app.get('/breakfastFood', (req, res) => {
+    app.get('/BreakFastFood', (req, res) => {
         allMenuCollections.find({"type" : "BreakFastFood"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
     //  MENUS : ALL BREAKFAST DRINK 
-    app.get('/breakfastDrink', (req, res) => {
+    app.get('/BreakFastDrink', (req, res) => {
         allMenuCollections.find({"type" : "BreakFastDrink"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
      //  MENUS : ALL LUNCH FOOD 
-     app.get('/lunchFood', (req, res) => {
+     app.get('/LunchFood', (req, res) => {
         allMenuCollections.find({"type" : "LunchFood"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
      //  MENUS : ALL LUNCH DRINK 
-     app.get('/lunchDrink', (req, res) => {
+     app.get('/LunchDrink', (req, res) => {
         allMenuCollections.find({"type" : "LunchDrink"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
      //  MENUS : ALL DINNER FOOD 
-     app.get('/dinnerFood', (req, res) => {
+     app.get('/DinnerFood', (req, res) => {
         allMenuCollections.find({"type" : "DinnerFood"})
         .toArray((err, documents) => {
             res.send(documents)
         })
     })
      //  MENUS : ALL DINNER DRINK 
-     app.get('/dinnerDrink', (req, res) => {
+     app.get('/DinnerDrink', (req, res) => {
         allMenuCollections.find({"type" : "DinnerDrink"})
         .toArray((err, documents) => {
             res.send(documents)
