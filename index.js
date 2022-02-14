@@ -27,7 +27,7 @@ client.connect(err => {
     const careerMessageCollections = client.db("dingoRestaurant").collection("careerMessage");
     const newsLetterCollections = client.db("dingoRestaurant").collection("newsLetter");
     console.log("DataBase connected");
-    
+
     //* ALL HTTPS REQUEST /////////////////////////////////////////////
     // HOME/MAIN URL
     app.get('/', (req, res) => {
@@ -40,36 +40,36 @@ client.connect(err => {
         const data = req.body;
         console.log(data);
         adminCollections.insertOne(data)
-        .then(result => {
-            res.json("Successfully Added New Admin")
-            console.log("Server : Successfully Added New Admin");
-        })
-        .catch(err => {
-            console.log("Error Are :", err);
-        })
+            .then(result => {
+                res.json("Successfully Added New Admin")
+                console.log("Server : Successfully Added New Admin");
+            })
+            .catch(err => {
+                console.log("Error Are :", err);
+            })
     })
     // DASHBOARD PAGE -: GET ALL ADMIN EMAILS
     app.get('/admin', (req, res) => {
         adminCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents);
-        })
+            .toArray((err, documents) => {
+                res.send(documents);
+            })
     })
     // DASHBOARD PAGE -: GET ALL MENU ITEMS
     app.get('/allFoods', (req, res) => {
         allMenuCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: DELETE SINGLE MENU
     app.delete('/deleteSingleMenu/:id', (req, res) => {
         const id = req.params.id
         // console.log(id);
-        allMenuCollections.deleteOne({_id: ObjectId(id)})
-        .then((result) => {
-            res.json("Deleted One Menu Item")
-        })
+        allMenuCollections.deleteOne({ _id: ObjectId(id) })
+            .then((result) => {
+                res.json("Deleted One Menu Item")
+            })
 
     })
     // DASHBOARD PAGE -: ADD FOOD ITEM MENU
@@ -77,124 +77,160 @@ client.connect(err => {
         const data = req.body;
         console.log(data);
         allMenuCollections.insertOne(data)
-        .then(result => {
-            res.json("Success To add New Menu")
-        })
-        .catch(err => {
-            console.log(err);
-        })
+            .then(result => {
+                res.json("Success To add New Menu")
+            })
+            .catch(err => {
+                console.log(err);
+            })
     })
     // DASHBOARD PAGE -: ADD NEW BLOG POST
     app.post('/addBlog', (req, res) => {
         const data = req.body;
         console.log(data);
         allBlogsCollections.insertOne(data)
-        .then(result => {
-            res.json("Success To Add Blog")
-        })
-        .catch(err => {
-            console.log("Error Message", err);
-        })
+            .then(result => {
+                res.json("Success To Add Blog")
+            })
+            .catch(err => {
+                console.log("Error Message", err);
+            })
     })
     // DASHBOARD PAGE -: GET ALL CONTACT US MESSAGE
     app.get('/allContactUsMessage', (req, res) => {
         contactUsMessageCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: VIEW SINGLE CONTACT US MESSAGE
     app.get('/singleContactUsMessage/:id', (req, res) => {
         const id = req.params.id
-        contactUsMessageCollections.find({_id : ObjectId(id)})
-        .toArray((err, documents) => {
-            res.send(documents[0])
-        })
+        contactUsMessageCollections.find({ _id: ObjectId(id) })
+            .toArray((err, documents) => {
+                res.send(documents[0])
+            })
     })
     // DASHBOARD PAGE -: GET ALL CAREER MESSAGE
     app.get('/allCareerMessage', (req, res) => {
         careerMessageCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: VIEW SINGLE CAREER MESSAGE
-    app.get('/singleCareerMessage/:id', (req, res)=> {
+    app.get('/singleCareerMessage/:id', (req, res) => {
         const id = req.params.id
-        careerMessageCollections.find({_id : ObjectId(id)})
-        .toArray((err, documents) => {
-            res.send(documents[0])
-        })
+        careerMessageCollections.find({ _id: ObjectId(id) })
+            .toArray((err, documents) => {
+                res.send(documents[0])
+            })
     })
     // DASHBOARD PAGE -: GET ALL NEWS LETTER
     app.get('/allNewsLetter', (req, res) => {
         newsLetterCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
+    })
+    // DASHBOARD PAGE -: UPDATE SINGLE MENU 
+    app.get('/updateMenu/:id', (req, res) => {
+        const id = req.params.id
+        console.log("res",id);
+        allMenuCollections.find({ _id: ObjectId(id) })
+            .toArray((err, documents) => {
+                res.send(documents[0])
+            })
+    })
+    // DASHBOARD PAGE -: MODIFY/PATCH MENU AND RESEND TO SERVER
+    app.patch('/toModifyServerData/:id', (req, res) => {
+        const id = req.params.id;
+        const data = req.body;
+        console.log(data);
+        allMenuCollections.updateOne({_id: ObjectId(id)},{
+            $set: {
+                title: req.body.title,
+                foodCategory: req.body.foodCategory,
+                shortDescription: req.body.shortDescription,
+                type: req.body.type,
+                price: req.body.price,
+                tags: req.body.tags,
+                rating: req.body.rating,
+                readyTime: req.body.readyTime,
+                prepTime: req.body.prepTime,
+                cookTime: req.body.cookTime,
+                serving: req.body.serving,
+                name: req.body.name,
+                ingredient: req.body.ingredient,
+                foodInstructions: req.body.foodInstructions,
+            }
+        })
+        .then(result => {
+            res.json("Now update menu successfully")
         })
     })
 
 
-     // HOME PAGE -: ADD NEWS LETTER
-     app.post('/addNewsletter', (req, res) => {
-         const data = req.body;
-         newsLetterCollections.insertOne(data)
-         .then(result => {
-             res.json("Wow! Now you get to regular update news")
-         })
-     })
+    // HOME PAGE -: ADD NEWS LETTER
+    app.post('/addNewsletter', (req, res) => {
+        const data = req.body;
+        newsLetterCollections.insertOne(data)
+            .then(result => {
+                res.json("Wow! Now you get to regular update news")
+            })
+    })
 
 
     // HOME PAGE -: GET ALL HOME FOODS MENUS
     app.get('/HomeMenu', (req, res) => {
-        allMenuCollections.find({"type" : "HomeMenu"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "HomeMenu" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
 
 
     // MENU PAGE -: GET ALL BREAKFAST FOOD MENUS
     app.get('/BreakFastFood', (req, res) => {
-        allMenuCollections.find({"type" : "BreakFastFood"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "BreakFastFood" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // MENU PAGE -: GET ALL BREAKFAST DRINK MENUS
     app.get('/BreakFastDrink', (req, res) => {
-        allMenuCollections.find({"type" : "BreakFastDrink"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "BreakFastDrink" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // MENU PAGE -: GET ALL LUNCH FOOD MENUS
     app.get('/LunchFood', (req, res) => {
-        allMenuCollections.find({"type" : "LunchFood"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "LunchFood" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // MENU PAGE -: GET ALL LUNCH DRINK MENUS 
     app.get('/LunchDrink', (req, res) => {
-        allMenuCollections.find({"type" : "LunchDrink"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "LunchDrink" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // MENU PAGE -: GET ALL DINNER FOOD MENUS
     app.get('/DinnerFood', (req, res) => {
-        allMenuCollections.find({"type" : "DinnerFood"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "DinnerFood" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // MENU PAGE -: GET ALL DINNER DRINK MENUS
     app.get('/DinnerDrink', (req, res) => {
-        allMenuCollections.find({"type" : "DinnerDrink"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allMenuCollections.find({ "type": "DinnerDrink" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
 
 
@@ -202,35 +238,35 @@ client.connect(err => {
     app.get('/singleMenu/:id', (req, res) => {
         const id = req.params.id
         // console.log("res",id);
-        allMenuCollections.find({_id: ObjectId(id)})
-        .toArray((err, documents) => {
-            res.send(documents[0])
-        })
+        allMenuCollections.find({ _id: ObjectId(id) })
+            .toArray((err, documents) => {
+                res.send(documents[0])
+            })
     })
 
 
     // HOME PAGE -: GET ALL BLOGS
     app.get('/homePageBlog', (req, res) => {
-        allBlogsCollections.find({"category" : "homePage"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allBlogsCollections.find({ "category": "homePage" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // BLOG PAGE -: GET ALL BLOGS
     app.get('/blogPageBlog', (req, res) => {
-        allBlogsCollections.find({"category" : "blogPage"})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        allBlogsCollections.find({ "category": "blogPage" })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // SINGLE-BLOG PAGE -: GET SINGLE BLOG ITEM
     app.get('/singleBlog/:id', (req, res) => {
         const id = req.params.id
         // console.log(id);
-        allBlogsCollections.find({_id: ObjectId(id)})
-        .toArray((err, documents) => {
-            res.send(documents[0])
-        })
+        allBlogsCollections.find({ _id: ObjectId(id) })
+            .toArray((err, documents) => {
+                res.send(documents[0])
+            })
     })
 
     // ABOUT PAGE -: ADD NEW ABOUT RESTAURANT REVIEW
@@ -238,46 +274,46 @@ client.connect(err => {
         const data = req.body;
         console.log(data)
         restaurantReviewCollections.insertOne(data)
-        .then(result => {
-            res.json("Success To Add New Restaurant Review")
-        })
-        .catch((err) => {
-            console.log("Error Message :", err);
-        })
-    }) 
+            .then(result => {
+                res.json("Success To Add New Restaurant Review")
+            })
+            .catch((err) => {
+                console.log("Error Message :", err);
+            })
+    })
     // ABOUT PAGE -: GET ALL ABOUT RESTAURANT REVIEWS
     app.get('/restaurantReview', (req, res) => {
         restaurantReviewCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
 
 
     // CONTACT PAGE -: ADD NEW CONTACT-US MESSAGE
-    app.post('/contactUsMessage', (req, res)=> {
+    app.post('/contactUsMessage', (req, res) => {
         const messageData = req.body
         contactUsMessageCollections.insertOne(messageData)
-        .then(result => {
-            res.json("Successfully Sent Your Message")
-        })
-        .catch(err => {
-            console.log(err)
-        })
+            .then(result => {
+                res.json("Successfully Sent Your Message")
+            })
+            .catch(err => {
+                console.log(err)
+            })
     })
 
 
     // CAREER PAGE -: ADD NEW CAREER MESSAGE
-        app.post('/addCareerMessage', (req, res) => {
-            const data = req.body;
-            careerMessageCollections.insertOne(data)
+    app.post('/addCareerMessage', (req, res) => {
+        const data = req.body;
+        careerMessageCollections.insertOne(data)
             .then(result => {
                 res.json("Successfully submit career message")
             })
             .catch(err => {
                 console.log(err);
             })
-        })
+    })
 
 
     // client.close();
