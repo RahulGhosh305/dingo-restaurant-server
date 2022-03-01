@@ -10,7 +10,7 @@ const ObjectId = require('mongodb').ObjectId;
 const uri = "mongodb+srv://dingoRestaurantUser:T6iIjrGHlUNfFw3F@cluster0.ensig.mongodb.net/dingoRestaurant?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-//* APPLICATION CREATE AND USES
+//* APPLICATION CREATE AND USES MIDDLEWARE
 const app = express();
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -26,6 +26,8 @@ client.connect(err => {
     const contactUsMessageCollections = client.db("dingoRestaurant").collection("contactUsMessage");
     const careerMessageCollections = client.db("dingoRestaurant").collection("careerMessage");
     const newsLetterCollections = client.db("dingoRestaurant").collection("newsLetter");
+    const reservationCollections = client.db("dingoRestaurant").collection("reservation");
+    const foodOrdersCollections = client.db("dingoRestaurant").collection("foodOrders");
     console.log("DataBase connected");
 
     //* ALL HTTPS REQUEST /////////////////////////////////////////////
@@ -49,7 +51,7 @@ client.connect(err => {
             })
     })
     // DASHBOARD PAGE -: GET ALL ADMIN EMAILS
-    app.get('/admin', (req, res) => {
+    app.get('/allAdmin', (req, res) => {
         adminCollections.find({})
             .toArray((err, documents) => {
                 res.send(documents);
@@ -103,6 +105,13 @@ client.connect(err => {
                 res.send(documents)
             })
     })
+    // DASHBOARD PAGE -: GET ALL TABLE RESERVATION
+    app.get('/allReservation', (req, res) => {
+        reservationCollections.find({})
+        .toArray((err, documents) => {
+            res.send(documents)
+        })
+    })
     // DASHBOARD PAGE -: VIEW SINGLE CONTACT US MESSAGE
     app.get('/singleContactUsMessage/:id', (req, res) => {
         const id = req.params.id
@@ -132,6 +141,29 @@ client.connect(err => {
             .toArray((err, documents) => {
                 res.send(documents)
             })
+    })
+    // DASHBOARD PAGE -: GET ALL ORDERS
+    app.get('/allFoodOrders', (req, res) => {
+        foodOrdersCollections.find({})
+        .toArray((err, documents) => {
+            res.send(documents)
+        })
+    })
+    // DASHBOARD PAGE -: GET SINGLE VIEW ORDER
+    app.get('/singleFoodOrderView/:id', (req, res) => {
+        const id = req.params.id
+        foodOrdersCollections.find({ _id: ObjectId(id) })
+        .toArray((err, documents) => {
+            res.send(documents)
+        })
+    })
+    // DASHBOARD PAGE -: GET INDIVIDUAL CUSTOMER ORDER
+    app.get('/customerOrderMenu', (req, res) => {
+        const searchEmail = req.query.email
+        foodOrdersCollections.find({logInEmail : searchEmail })
+        .toArray((err, documents) => {
+            res.send(documents)
+        })
     })
     // DASHBOARD PAGE -: UPDATE SINGLE MENU 
     app.get('/updateMenu/:id', (req, res) => {
@@ -314,6 +346,33 @@ client.connect(err => {
                 console.log(err);
             })
     })
+
+
+    // RESERVATION PAGE -: ADD NEW RESERVATION
+    app.post('/addReservation', (req, res) => {
+        const data = req.body;
+        // let date = req.body.date
+        // let table = req.body.table
+        // let time = req.body.time
+        // console.log(date,table,time)
+        // console.log(data)
+        // let matches = reservationCollections.countDocuments({$and : [{"date": { $eq: date }}, {"time": { $eq: time }}, {"table": { $eq: table }}]})
+        // console.log("ans",matches)
+        reservationCollections.insertOne(data)
+        .then(result => {
+            res.json('Congratulation! You Booked a Table Successfully')
+        })
+    })
+
+    // CART TO CONFIRM PAGE : ADD FOOD ORDER
+    app.post('/makeFoodOrder', (req, res) => {
+        const data = req.body;
+        foodOrdersCollections.insertOne(data)
+        .then(result => {
+            res.json("Order Save Successfully")
+            console.log("Order Save Successfully")
+        })
+    }) 
 
 
     // client.close();
