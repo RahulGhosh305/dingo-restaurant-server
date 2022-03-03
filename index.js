@@ -3,11 +3,12 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+require('dotenv').config()
 
 //* DATABASE INSTANCES  
 const { MongoClient } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
-const uri = "mongodb+srv://dingoRestaurantUser:T6iIjrGHlUNfFw3F@cluster0.ensig.mongodb.net/dingoRestaurant?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.USER_NAME}:${process.env.USER_PASSWORD}@cluster0.ensig.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //* APPLICATION CREATE AND USES MIDDLEWARE
@@ -379,7 +380,7 @@ client.connect(err => {
 });
 
 //* PORT AND APP LISTENER 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server Is Running Port ${PORT}`);
 })
