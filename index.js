@@ -357,8 +357,6 @@ client.connect(err => {
         // let time = req.body.time
         // console.log(date,table,time)
         // console.log(data)
-        // let matches = reservationCollections.countDocuments({$and : [{"date": { $eq: date }}, {"time": { $eq: time }}, {"table": { $eq: table }}]})
-        // console.log("ans",matches)
         reservationCollections.insertOne(data)
         .then(result => {
             res.json('Congratulation! You Booked a Table Successfully')
