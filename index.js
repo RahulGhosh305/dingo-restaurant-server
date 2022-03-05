@@ -5,6 +5,24 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 require('dotenv').config()
 
+//* FIREBASE INITIALZE APP
+const admin = require("firebase-admin");
+// const serviceAccount = require("./dingo-restaurant-rg-firebase-adminsdk-iqeph-d69ae195bb.json");
+admin.initializeApp({
+    credential: admin.credential.cert({
+        type: process.env.TYPE,
+        project_id: process.env.PROJECT_ID,
+        private_key_id: process.env.PRIVATE_KEY_ID,
+        private_key: process.env.PRIVATE_KEY.replace(/\\n/g, '\n'),
+        client_email: process.env.CLIENT_EMAIL,
+        client_id: process.env.CLIENT_ID,
+        auth_uri: process.env.AUTH_URI,
+        token_uri: process.env.TOKEN_URI,
+        auth_provider_x509_cert_url: process.env.AUTH_PROVIDER_X509_CERT_URL,
+        client_x509_cert_url: process.env.CLIENT_X509_CERT_URL,
+    })
+});
+
 //* DATABASE INSTANCES  
 const { MongoClient } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
@@ -17,6 +35,21 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(morgan("dev"))
+
+//* JWT VERIFIED FUNCTION
+async function verifyToken(req, res, next) {
+    if (req.headers?.authorization?.startsWith('Bearer ')) {
+        const idToken = req.headers.authorization.split('Bearer ')[1]
+        try {
+            const deCodedUser = await admin.auth().verifyIdToken(idToken)
+            req.deCodedUserEmail = deCodedUser.email
+        }
+        catch {
+
+        }
+    }
+    next()
+}
 
 //* DATABASE CONNECTION 
 client.connect(err => {
@@ -109,9 +142,9 @@ client.connect(err => {
     // DASHBOARD PAGE -: GET ALL TABLE RESERVATION
     app.get('/allReservation', (req, res) => {
         reservationCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: VIEW SINGLE CONTACT US MESSAGE
     app.get('/singleContactUsMessage/:id', (req, res) => {
@@ -146,30 +179,37 @@ client.connect(err => {
     // DASHBOARD PAGE -: GET ALL ORDERS
     app.get('/allFoodOrders', (req, res) => {
         foodOrdersCollections.find({})
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: GET SINGLE VIEW ORDER
     app.get('/singleFoodOrderView/:id', (req, res) => {
         const id = req.params.id
         foodOrdersCollections.find({ _id: ObjectId(id) })
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+            .toArray((err, documents) => {
+                res.send(documents)
+            })
     })
     // DASHBOARD PAGE -: GET INDIVIDUAL CUSTOMER ORDER
-    app.get('/customerOrderMenu', (req, res) => {
+    app.get('/customerOrderMenu', verifyToken, (req, res) => {
         const searchEmail = req.query.email
-        foodOrdersCollections.find({logInEmail : searchEmail })
-        .toArray((err, documents) => {
-            res.send(documents)
-        })
+        // console.log(req.deCodedUserEmail)
+        // console.log(searchEmail)
+        if (req.deCodedUserEmail === searchEmail) {
+            foodOrdersCollections.find({ logInEmail: searchEmail })
+                .toArray((err, documents) => {
+                    res.send(documents)
+                })
+        }
+        else {
+            res.status(401).json({ message: "User not authorized" })
+        }
     })
     // DASHBOARD PAGE -: UPDATE SINGLE MENU 
     app.get('/updateMenu/:id', (req, res) => {
         const id = req.params.id
-        console.log("res",id);
+        console.log("res", id);
         allMenuCollections.find({ _id: ObjectId(id) })
             .toArray((err, documents) => {
                 res.send(documents[0])
@@ -180,7 +220,7 @@ client.connect(err => {
         const id = req.params.id;
         const data = req.body;
         console.log(data);
-        allMenuCollections.updateOne({_id: ObjectId(id)},{
+        allMenuCollections.updateOne({ _id: ObjectId(id) }, {
             $set: {
                 title: req.body.title,
                 foodCategory: req.body.foodCategory,
@@ -198,9 +238,9 @@ client.connect(err => {
                 foodInstructions: req.body.foodInstructions,
             }
         })
-        .then(result => {
-            res.json("Now update menu successfully")
-        })
+            .then(result => {
+                res.json("Now update menu successfully")
+            })
     })
 
 
@@ -358,20 +398,20 @@ client.connect(err => {
         // console.log(date,table,time)
         // console.log(data)
         reservationCollections.insertOne(data)
-        .then(result => {
-            res.json('Congratulation! You Booked a Table Successfully')
-        })
+            .then(result => {
+                res.json('Congratulation! You Booked a Table Successfully')
+            })
     })
 
     // CART TO CONFIRM PAGE : ADD FOOD ORDER
     app.post('/makeFoodOrder', (req, res) => {
         const data = req.body;
         foodOrdersCollections.insertOne(data)
-        .then(result => {
-            res.json("Order Save Successfully")
-            console.log("Order Save Successfully")
-        })
-    }) 
+            .then(result => {
+                res.json("Order Save Successfully")
+                console.log("Order Save Successfully")
+            })
+    })
 
 
     // client.close();
