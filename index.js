@@ -7,7 +7,6 @@ require('dotenv').config()
 
 //* FIREBASE INITIALZE APP
 const admin = require("firebase-admin");
-// const serviceAccount = require("./dingo-restaurant-rg-firebase-adminsdk-iqeph-d69ae195bb.json");
 admin.initializeApp({
     credential: admin.credential.cert({
         type: process.env.TYPE,
