@@ -7,10 +7,6 @@ require('dotenv').config()
 
 //* FIREBASE INITIALZE APP
 const admin = require("firebase-admin");
-// const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
-// admin.initializeApp({
-//   credential: admin.credential.cert(serviceAccount)
-// });
 admin.initializeApp({
     credential: admin.credential.cert({
         type: process.env.TYPE,
@@ -210,14 +206,6 @@ client.connect(err => {
             res.status(401).json({ message: "User not authorized" })
         }
     })
-    // DASHBOARD PAGE -: GET INDIVIDUAL CUSTOMER ORDER
-    // app.get('/customerOrderMenu', (req, res) => {
-    //     const searchEmail = req.query.email
-    //     foodOrdersCollections.find({ logInEmail: searchEmail })
-    //         .toArray((err, documents) => {
-    //             res.send(documents)
-    //         })
-    // })
     // DASHBOARD PAGE -: UPDATE SINGLE MENU 
     app.get('/updateMenu/:id', (req, res) => {
         const id = req.params.id
@@ -404,11 +392,6 @@ client.connect(err => {
     // RESERVATION PAGE -: ADD NEW RESERVATION
     app.post('/addReservation', (req, res) => {
         const data = req.body;
-        // let date = req.body.date
-        // let table = req.body.table
-        // let time = req.body.time
-        // console.log(date,table,time)
-        // console.log(data)
         reservationCollections.insertOne(data)
             .then(result => {
                 res.json('Congratulation! You Booked a Table Successfully')
