@@ -8,6 +8,7 @@ In the project directory connected to the fronted-end-site (Dingo Restauant). Th
 - This project is designed with beautiful 35+ big & small pages UI design and real content writing.
 - Used Sign-up with Google and Create account with email and password, Sign-In, Signout functionalities.
 - Also, have a verification email account process, have also password reset process.
+- Set firebase JWT (Json web token) to secure API route
 - Different customer and admin dashboards created.
 - Customers can make food orders, book reservation tables and comment about restaurant reviews.
 - Customers can contact to admin through drop a message.
