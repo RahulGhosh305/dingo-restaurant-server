@@ -71,10 +71,6 @@ client.connect(err => {
     console.log("DataBase connected");
 
     //* ALL HTTPS REQUEST /////////////////////////////////////////////
-    // HOME/MAIN URL
-    app.get('/', (req, res) => {
-        res.send("Home....YAY!")
-    })
 
 
     // DASHBOARD PAGE -: ADD NEW ADMIN EMAIL
@@ -412,6 +408,11 @@ client.connect(err => {
                 res.json("Order Save Successfully")
                 console.log("Order Save Successfully")
             })
+    })
+
+    // HOME/MAIN URL
+    app.get('/', (req, res) => {
+        res.send("Home....YAY!")
     })
 
 
